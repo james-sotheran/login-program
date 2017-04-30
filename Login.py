@@ -48,14 +48,14 @@ def password(): #This bit makes sure they have a valid password
     f = open("database.txt", "a")
     pwd , pwdcheck = None , None
     pwd = getpass.getpass("Please choose a password: ")
-    checkpwd = base64.encodestring(pwd) 
-    for line in f:
-                while True:
-                    if str(checkpwd) not in line:
-                            break
-                    else:
-                        print "Sorry this password is already taken. Please pick another..."
-                        password()
+#    checkpwd = base64.encodestring(pwd) 
+#    for line in f:
+#                while True:
+#                    if str(checkpwd) not in line:
+#                            break
+#                    else:
+#                        print "Sorry this password is already taken. Please pick another..."
+#                        password()
     while True:  
         if (len(pwd)<6):
             print("Not a Valid Password")
