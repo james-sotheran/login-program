@@ -48,8 +48,9 @@ def password(): #This bit makes sure they have a valid password
     f = open("database.txt", "a")
     pwd , pwdcheck = None , None
     pwd = getpass.getpass("Please choose a password: ")
+#    pwdcheck = open("pwdcheck.txt", "a") #Common passords
 #    checkpwd = base64.encodestring(pwd) 
-#    for line in f:
+#    for line in pwdcheck:
 #                while True:
 #                    if str(checkpwd) not in line:
 #                            break
