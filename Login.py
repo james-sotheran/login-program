@@ -1,6 +1,5 @@
 #Login for a random program V2.0
 import getpass, re, time, base64 #EFFICIENCY!!!!!!!!!
-#
 
 def uname():
     global create_uname
