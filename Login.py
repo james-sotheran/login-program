@@ -1,5 +1,5 @@
 #Login for a random program V2.0
-import getpass, re, time, base64 #EFFICIENCY!!!!!!!!!
+import getpass, re, time, base64 
 
 def uname():
     global create_uname
@@ -60,13 +60,13 @@ def password(): #This bit makes sure they have a valid password
         if (len(pwd)<6):
             print("Not a Valid Password")
             password()
-        elif not re.search("[a-z]",pwd): #RE.SEARCH FTW!!!!!!!!!
+        elif not re.search("[a-z]",pwd): 
             print("Not a Valid Password")
             password()
-        elif not re.search("[0-9]",pwd): #RE.SEARCH FTW!!!!!!!!!
+        elif not re.search("[0-9]",pwd): 
             print("Not a Valid Password")
             password()
-        elif not re.search("[A-Z]",pwd): #RE.SEARCH FTW!!!!!!!!!
+        elif not re.search("[A-Z]",pwd): 
             print("Not a Valid Password")
             password()
         else:
@@ -91,7 +91,7 @@ def password(): #This bit makes sure they have a valid password
                 password()
         
 def loginn(): #if it was called 'login' it would be confused with the filename
-    global f #global just in case
+    global f 
     login_username = raw_input("Please enter your username: ")
     a = 0
     b = 0
